@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+    .nav-link {
+      padding: .5rem 0;
+    }
+    .navbar-toggler {
+      margin-top: .5rem;
+    }
+    .navbar-brand{
+        text-align: left;
+    }
+  }
+  .rest {
+   max-width: 10%; 
+    height: auto;
+    margin-left: auto;
+  }
+ 
+  .brand{
+    text-align: left;
+}
