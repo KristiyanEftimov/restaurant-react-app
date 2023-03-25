@@ -13,12 +13,35 @@
   }
 }
 
+.right {
+  float: right;
+  text-align: center;
+}
+
 .logo {
-  max-width: 25%;
+  max-width: 4rem;
   height: auto;
   margin-left: auto;
 }
 
 .brand{
   text-align: left;
+}
+
+.navbar {
+  background-color: rgb(48, 35, 24, 0.7);
+  position:fixed;
+  z-index: 4;
+  left:0;
+  right:0;
+}
+
+.navbar {
+  --bs-navbar-color: white;
+  --bs-navbar-active-color: white;
+  --bs-navbar-hover-color: lightgray;
+}
+
+.right {
+  flex-grow: 0 !important;
 }

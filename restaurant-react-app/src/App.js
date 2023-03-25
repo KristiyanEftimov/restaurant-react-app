@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Menu from './Menu/Menu';
 import Header from './Layout/Header';
+import LandingPage from './Layout/LangingPage';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <LandingPage/>
      
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
