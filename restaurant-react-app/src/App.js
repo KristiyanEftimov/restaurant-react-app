@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Menu from './Menu/Menu';
 import Header from './Layout/Header';
-import LandingPage from './Layout/LangingPage';
+import LandingPage from './Layout/LandingPage';
 
 function App() {
   return (
