@@ -1,8 +1,5 @@
 .landingpage {
-    position: relative;
-    overflow: hidden;
     height: 100vh;
-    margin: 0;
     left:0;
     right: 0;
     top:0;
@@ -27,16 +24,28 @@
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.5;
+    background-color: black;
+    opacity: 0.6;
     z-index: 1;
 }
 
 h2 {
-    position: absolute;
     color: white;
     font-family: 'Amatic SC',handwriting;
     font-size: 52px;
     letter-spacing: 7px;
     line-height: 1.3em;
     z-index: 1;
+}
+
+button {
+    font-size: 30px !important;
+    --bs-btn-hover-color: white !important;
+    --bs-btn-active-color: white !important;
+    --bs-btn-color: #C39D63 !important;
+    --bs-btn-border-color: #C39D63 !important;
+    --bs-btn-hover-bg: #C39D63 !important;
+    --bs-btn-hover-border-color:#C39D63 !important;
+    --bs-btn-active-bg:#C39D63 !important;
+    --bs-btn-active-border-color: #C39D63 !important;
 }

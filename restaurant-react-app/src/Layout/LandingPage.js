@@ -10,8 +10,12 @@ export default function LandingPage() {
             <video className={classes.video} playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop" loading="lazy">
                 <source src={RestaurantVideo} type="video/mp4" />
             </video>
-            <h2>Добре дошли в ресторант <br/> "The Hungry Bear"
+            <h2>
+                Добре дошли в ресторант <br/> "The Hungry Bear" <br/>
+                <button type="button" class="btn btn-outline-warning">Резервация</button>
             </h2>
+            {/* <button type="button" class="btn btn-outline-warning">Warning</button> */}
+            {/* <a className={classes.reservation} href='#'>Резервация</a> */}
         </Container>
     );
 }
