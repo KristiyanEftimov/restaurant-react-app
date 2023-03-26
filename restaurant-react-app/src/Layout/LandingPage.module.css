@@ -38,14 +38,18 @@ h2 {
     z-index: 1;
 }
 
-button {
-    font-size: 30px !important;
-    --bs-btn-hover-color: white !important;
-    --bs-btn-active-color: white !important;
-    --bs-btn-color: #C39D63 !important;
-    --bs-btn-border-color: #C39D63 !important;
-    --bs-btn-hover-bg: #C39D63 !important;
-    --bs-btn-hover-border-color:#C39D63 !important;
-    --bs-btn-active-bg:#C39D63 !important;
-    --bs-btn-active-border-color: #C39D63 !important;
+.reservation {
+    font-size: 30px;
+    text-decoration: none;
+    color: #C39D63;
+    border: 1px solid #C39D63;
+    padding: 0.75rem 0.55rem;
+    border-radius: 0.375rem;
+    letter-spacing: 0;
+}
+
+.reservation:hover {
+    background-color: #C39D63;
+    color: white;
+    transition: 0.3s;
 }

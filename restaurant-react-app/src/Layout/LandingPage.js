@@ -12,10 +12,8 @@ export default function LandingPage() {
             </video>
             <h2>
                 Добре дошли в ресторант <br/> "The Hungry Bear" <br/>
-                <button type="button" class="btn btn-outline-warning">Резервация</button>
+                <a className={classes.reservation} href='#'>Резервация</a>
             </h2>
-            {/* <button type="button" class="btn btn-outline-warning">Warning</button> */}
-            {/* <a className={classes.reservation} href='#'>Резервация</a> */}
         </Container>
     );
 }
