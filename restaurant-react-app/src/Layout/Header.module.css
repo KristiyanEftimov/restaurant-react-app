@@ -34,9 +34,6 @@
   z-index: 4;
   left:0;
   right:0;
-}
-
-.navbar {
   --bs-navbar-color: white;
   --bs-navbar-active-color: white;
   --bs-navbar-hover-color: lightgray;
