@@ -1,0 +1,35 @@
+.row {
+    margin-top: 5rem;
+}
+
+.restaurantImage {
+    width: 70%;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #C39D63;
+    padding: 0.75rem 0.55rem;
+}
+
+.button,
+.button:hover {
+    color: white;
+}
+
+.justify {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .opinions,
+    .row {
+        display: contents;
+    }
+
+    .row img,
+    .row h3,
+    .reviews  {
+        margin-top: 2rem;
+    }
+}
