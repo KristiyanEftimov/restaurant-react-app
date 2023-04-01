@@ -2,10 +2,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
 import classes from "./RestaurantInfo.module.css";
 import RestaurantFood from './RestaurantFood.jpg';
+import ScrollToTop from "react-scroll-to-top";
 
 export default function RestaurantInfo() {
     return(
         <Container>
+            <ScrollToTop smooth color="white" style={{backgroundColor: "#C39D63"}}/>
             <Row className={classes.row}>
                 <Col>
                     <h3>Нашата мисия</h3>

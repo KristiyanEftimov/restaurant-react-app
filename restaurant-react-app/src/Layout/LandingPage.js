@@ -12,7 +12,7 @@ export default function LandingPage() {
             </video>
             <h2>
                 Добре дошли в ресторант <br/> "The Hungry Bear" <br/>
-                <a className={classes.reservation} href='#'>Резервация</a>
+                <a className={classes.reservation} href='#reservation'>Резервация</a>
             </h2>
         </Container>
     );
