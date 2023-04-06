@@ -3,12 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import classes from "./css/RestaurantInfo.module.css";
 import RestaurantFood from './media/RestaurantFood.jpg';
 import RestaurantView from './media/RestaurantView.jpg';
-import Hostess from './media/Hostess.jpg';
-
 import ScrollToTop from "react-scroll-to-top";
 
 export default function RestaurantInfo() {
-    return(
+    return (
         <Container>
             <ScrollToTop smooth color="white" style={{backgroundColor: "#C39D63"}}/>
             <Row className={classes.row}>
@@ -18,7 +16,7 @@ export default function RestaurantInfo() {
 
                     &emsp;Ние се стремим да изградим дълготрайни отношения с нашите клиенти, като се фокусираме върху техните нужди и предлагаме персонализирани решения, които имат високо качество и ценност. Нашата мисия е да създадем стабилни връзки с нашите клиенти, като се стремим да ги удовлетворим с всяка една услуга, която предлагаме.</p>
                     <br/>
-                    <a className={classes.button} href="#">За нас</a>
+                    <a className={classes.button} href="#about">За нас</a>
                 </Col>
                 <Col><img className={classes.restaurantImage} src={RestaurantView} alt="Food"/></Col>
             </Row>
@@ -28,7 +26,7 @@ export default function RestaurantInfo() {
                     <h3>Различни вкусове всеки ден  </h3>
                     <p className={classes.justify}> &emsp; Нашето меню е пълно с изкусителни ястия и напитки, които ще задоволят всеки вкус. Започнете с нашите свежи предястия и продължете с основните ястия, приготвени от висококачествени съставки. Открийте разнообразието от вкусове с нашите специалитети на грил, сезонни ястия и регионални деликатеси. Завършете своята хранителна приказка с невероятните ни десерти, като макарони, тирамису и шоколадови изкушения. Съчетайте вашите ястия с богатия ни избор от вина и други напитки.</p>
                     <br/>
-                    <a className={classes.button} href="#">Меню</a>
+                    <a className={classes.button} href="#menu">Меню</a>
                 </Col>
             </Row>
             <Row className={classes.row}>
@@ -36,9 +34,10 @@ export default function RestaurantInfo() {
                     <h3>Как да ни намерите</h3>
                     <p className={classes.justify}> &emsp; За да ни намерите, можете да използвате нашата адресна локация, която може да бъде намерена на нашия уебсайт или в социалните ни медии. Можете да се свържете с нас и по телефона или чрез имейл, където ще получите подробна информация за начина на намиране на нашия ресторант. Ние винаги сме готови да отговорим на ваши въпроси и да ви помогнем да ни намерите без затруднения. Очакваме с нетърпение да ви посрещнем в нашия ресторант!</p>
                     <br/>
-                    <a className={classes.button} href="#">Контакти</a>
+                    <a className={classes.button} href="#contact">Контакти</a>
                 </Col>
-                <Col><img className={classes.restaurantImage} src={Hostess} alt="Food"/></Col>
+                <Col> <br/><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.8974655930524!2d27.93605231475953!3d43.211639888890126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEyJzQxLjkiTiAyN8KwNTYnMTcuNyJF!5e0!3m2!1sbg!2sbg!4v1680806841288!5m2!1sbg!2sbg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </Col>
             </Row>
             <Row className={classes.row}>
                 <Col><p className={classes.reviews}>ОТЗИВИ</p></Col>

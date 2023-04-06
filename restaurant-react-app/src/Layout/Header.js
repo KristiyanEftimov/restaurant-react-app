@@ -16,7 +16,7 @@ export default function Header() {
           <Nav className="me-auto" bg="light">
             <Nav.Link className={classes.link} href="#home">Начало</Nav.Link>
             <Nav.Link className={classes.link} href="#about">За нас</Nav.Link>
-            <NavDropdown style={{color: "white"}} title="Меню" id="basic-nav-dropdown">
+            <NavDropdown style={{color: "white"}} href="#menu" title="Меню" id="basic-nav-dropdown">
               <NavDropdown.Item href="#menu-lunch">Обедно меню</NavDropdown.Item>
               <NavDropdown.Item href="#menu-dinner">Основно меню</NavDropdown.Item>
             </NavDropdown>
