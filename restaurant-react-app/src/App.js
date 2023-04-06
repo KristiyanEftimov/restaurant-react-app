@@ -3,6 +3,7 @@ import Menu from './Menu/Menu';
 import Header from './Layout/Header';
 import LandingPage from './Layout/LandingPage';
 import RestaurantInfo from './Layout/RestaurantInfo';
+import Footer from './Layout/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <LandingPage/>
       <RestaurantInfo />
+      <Footer/>
     </div>
   );
 }
