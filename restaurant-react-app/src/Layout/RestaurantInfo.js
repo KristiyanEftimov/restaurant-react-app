@@ -37,7 +37,9 @@ export default function RestaurantInfo() {
                     <br/>
                     <a className={classes.button} href="#contact">Контакти</a>
                 </Col>
-                <Col> <br/><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.8974655930524!2d27.93605231475953!3d43.211639888890126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEyJzQxLjkiTiAyN8KwNTYnMTcuNyJF!5e0!3m2!1sbg!2sbg!4v1680806841288!5m2!1sbg!2sbg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <Col>
+                    <br/>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.8974655930524!2d27.93605231475953!3d43.211639888890126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEyJzQxLjkiTiAyN8KwNTYnMTcuNyJF!5e0!3m2!1sbg!2sbg!4v1680806841288!5m2!1sbg!2sbg" width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </Col>
             </Row>
             <Row className={classes.row}>
