@@ -1,0 +1,43 @@
+.contactsRow i {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.location {
+    color: red;
+}
+
+.phone {
+    color: orange;
+}
+
+.mail {
+    color: green;
+}
+
+.workingTime {
+    color: cornflowerblue;
+}
+
+.contactsRow p {
+    margin-bottom: 0;
+}
+
+.contactsRow h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contactsRow {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767.5px) {
+    .contactsRow {
+        display: contents;
+    }
+
+    .contactsCol {
+        margin-bottom: 2rem;
+    }
+}

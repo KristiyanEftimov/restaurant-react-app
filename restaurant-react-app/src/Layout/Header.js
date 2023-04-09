@@ -19,7 +19,7 @@ export default function Header() {
     <Navbar className={classes.navbar}  expand="lg">
       <Container>
         <Navbar.Brand className={classes.brand}>
-            <a href="#home"><img src={logo} className={classes.logo} alt="restaurant logo" /></a>
+            <a href="/"><img src={logo} className={classes.logo} alt="restaurant logo" /></a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className={classes.right} id="basic-navbar-nav">
