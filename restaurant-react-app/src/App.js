@@ -1,17 +1,17 @@
 import './App.css';
-import Menu from './Menu/Menu';
-import Header from './Layout/Header';
-import LandingPage from './Layout/LandingPage';
-import RestaurantInfo from './Layout/RestaurantInfo';
-import Footer from './Layout/Footer';
+import Home from "./Home";
+import Contacts from "./Contacts";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <LandingPage/>
-      <RestaurantInfo/>
-      <Footer/>
+      <>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/contacts' element={<Contacts/>} />
+      </Routes>
+      </>
     </div>
   );
 }

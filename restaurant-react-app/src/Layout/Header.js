@@ -2,9 +2,19 @@ import { Navbar, Nav, NavDropdown, Container, NavbarBrand } from 'react-bootstra
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from "./css/Header.module.css";
 import logo from './media/RestaurantLogo.png';
-
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/');
+  };
+
+  const navigateToContacts = () => {
+    navigate('/contacts');
+  };
+  
   return (
     <Navbar className={classes.navbar}  expand="lg">
       <Container>
@@ -14,13 +24,13 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className={classes.right} id="basic-navbar-nav">
           <Nav className="me-auto" bg="light">
-            <Nav.Link className={classes.link} href="#home">Начало</Nav.Link>
+            <Nav.Link className={classes.link} onClick={navigateToHome}>Начало</Nav.Link>
             <Nav.Link className={classes.link} href="#about">За нас</Nav.Link>
             <NavDropdown style={{color: "white"}} href="#menu" title="Меню" id="basic-nav-dropdown">
               <NavDropdown.Item href="#menu-lunch">Обедно меню</NavDropdown.Item>
               <NavDropdown.Item href="#menu-dinner">Основно меню</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className={classes.link} href="#contact">Контакти</Nav.Link>
+            <Nav.Link className={classes.link} onClick={navigateToContacts}>Контакти</Nav.Link>
             <Nav.Link className={classes.link} href="#reservation">Резервация</Nav.Link>
           </Nav>
         </Navbar.Collapse>
