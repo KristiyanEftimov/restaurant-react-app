@@ -14,6 +14,14 @@ export default function Header() {
   const navigateToContacts = () => {
     navigate('/contacts');
   };
+
+  const navigateToAbout = () => {
+    navigate('/about');
+  };
+
+  const navigateToReservation = () => {
+    navigate('/reservation');
+  };
   
   return (
     <Navbar className={classes.navbar}  expand="lg">
@@ -25,13 +33,13 @@ export default function Header() {
         <Navbar.Collapse className={classes.right} id="basic-navbar-nav">
           <Nav className="me-auto" bg="light">
             <Nav.Link className={classes.link} onClick={navigateToHome}>Начало</Nav.Link>
-            <Nav.Link className={classes.link} href="#about">За нас</Nav.Link>
+            <Nav.Link className={classes.link} onClick={navigateToAbout}>За нас</Nav.Link>
             <NavDropdown style={{color: "white"}} href="#menu" title="Меню" id="basic-nav-dropdown">
               <NavDropdown.Item href="#menu-lunch">Обедно меню</NavDropdown.Item>
               <NavDropdown.Item href="#menu-dinner">Основно меню</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className={classes.link} onClick={navigateToContacts}>Контакти</Nav.Link>
-            <Nav.Link className={classes.link} href="#reservation">Резервация</Nav.Link>
+            <Nav.Link className={classes.link} onClick={navigateToReservation}>Резервация</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

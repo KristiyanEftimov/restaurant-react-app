@@ -16,7 +16,7 @@ export default function RestaurantInfo() {
 
                     &emsp;Ние насърчаваме иновации и творчески подход към работата, като търсим постоянно начини да подобрим нашите услуги и да осигурим максимално удовлетворение на клиентите. Всеки от нашите служители е ангажиран с нашата мисия и работи усърдно, за да я изпълни във всичко, което прави.</p>
                     <br/>
-                    <a className={classes.button} href="#about">За нас</a>
+                    <a className={classes.button} href="/about">За нас</a>
                 </Col>
                 <Col><img className={classes.restaurantImage} src={RestaurantView} alt="Food"/></Col>
             </Row>
