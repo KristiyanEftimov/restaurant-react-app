@@ -1,6 +1,6 @@
-import './App.css';
-import Home from "./Home";
-import Contacts from "./Contacts";
+import './Layout/css/App.css';
+import Home from "./Pages/Home";
+import Contacts from "./Pages/Contacts";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
