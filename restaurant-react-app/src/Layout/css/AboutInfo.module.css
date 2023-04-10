@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/* Define the font family for the component */
 .container {
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .title {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
+    font-family: 'Ink Free', handwriting;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .restaurantImage {
@@ -16,11 +16,10 @@
     height: 80%;
 }
 
-
 .aboutcol {
     display: flex;
     justify-content: center;
-  align-items: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 767.5px) {
