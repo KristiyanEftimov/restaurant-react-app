@@ -4,6 +4,10 @@
   background-size: cover;
 }
 
+.about {
+  background: url('../media/MarbleBackground.jpg');
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
