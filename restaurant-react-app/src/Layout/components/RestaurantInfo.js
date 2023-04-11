@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
-import classes from "./css/RestaurantInfo.module.css";
-import RestaurantFood from './media/RestaurantFood.jpg';
-import RestaurantView from './media/RestaurantView.jpg';
+import classes from "../css/RestaurantInfo.module.css";
+import RestaurantFood from '../media/RestaurantFood.jpg';
+import RestaurantView from '../media/RestaurantView.jpg';
 import ScrollToTop from "react-scroll-to-top";
 
 export default function RestaurantInfo() {

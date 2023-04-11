@@ -1,7 +1,7 @@
-import ContactsImage from '../Layout/ContactsImage';
-import ContactsInfo from '../Layout/ContactsInfo';
-import Header from '../Layout/Header';
-import Footer from '../Layout/Footer';
+import ContactsImage from '../Layout/components/ContactsImage';
+import ContactsInfo from '../Layout/components/ContactsInfo';
+import Header from '../Layout/components/Header';
+import Footer from '../Layout/components/Footer';
 
 function Contacts() {
     return(

@@ -1,7 +1,7 @@
 import { Navbar, Nav, NavDropdown, Container, NavbarBrand } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import classes from "./css/Header.module.css";
-import logo from './media/RestaurantLogo.png';
+import classes from "../css/Header.module.css";
+import logo from '../media/RestaurantLogo.png';
 import { useNavigate } from "react-router-dom";
 
 export default function Header() {

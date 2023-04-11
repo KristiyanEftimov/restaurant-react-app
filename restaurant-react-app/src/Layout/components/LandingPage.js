@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-import classes from "./css/LandingPage.module.css";
-import RestaurantVideo from './media/RestaurantVideo.mp4';
+import classes from "../css/LandingPage.module.css";
+import RestaurantVideo from '../media/RestaurantVideo.mp4';
 
 export default function LandingPage() {
     return (

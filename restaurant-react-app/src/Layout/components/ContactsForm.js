@@ -1,5 +1,5 @@
 import { Form, Button,Row,Col } from 'react-bootstrap';
-import classes from './css/ContactsForm.module.css';
+import classes from '../css/ContactsForm.module.css';
 
 export default function ContactsForm() {
     return (

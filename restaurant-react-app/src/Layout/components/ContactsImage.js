@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import classes from "./css/ContactsImage.module.css";
-import "./css/ContactsImage.module.css";
-import background from './media/RestaurantView.jpg';
+import classes from "../css/ContactsImage.module.css";
+import "../css/ContactsImage.module.css";
+import background from '../media/RestaurantView.jpg';
 
 
 export default function ContactsImage() {

@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
-import classes from "./css/AboutInfo.module.css";
-import "./css/AboutInfo.module.css";
-import RestaurantView from './media/RestaurantView.jpg';
+import classes from "../css/AboutInfo.module.css";
+import "../css/AboutInfo.module.css";
+import RestaurantView from '../media/RestaurantView.jpg';
 
 export default function AboutInfo() {
     return (

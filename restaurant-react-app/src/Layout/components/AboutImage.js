@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import classes from "./css/AboutImage.module.css";
-import "./css/AboutImage.module.css";
-import background from './media/Hostess.jpeg';
+import classes from "../css/AboutImage.module.css";
+import "../css/AboutImage.module.css";
+import background from '../media/Hostess.jpeg';
 
 
 export default function AboutImage() {

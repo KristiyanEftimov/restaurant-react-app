@@ -1,7 +1,7 @@
-import Header from '../Layout/Header';
-import Footer from '../Layout/Footer';
-import AboutImage from '../Layout/AboutImage';
-import AboutInfo from '../Layout/AboutInfo';
+import Header from '../Layout/components/Header';
+import Footer from '../Layout/components/Footer';
+import AboutImage from '../Layout/components/AboutImage';
+import AboutInfo from '../Layout/components/AboutInfo';
 
 function About() {
     return (

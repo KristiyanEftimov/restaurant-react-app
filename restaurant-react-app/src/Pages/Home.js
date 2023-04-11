@@ -1,8 +1,8 @@
 import '../Layout/css/App.css';
-import Header from '../Layout/Header';
-import LandingPage from '../Layout/LandingPage';
-import RestaurantInfo from '../Layout/RestaurantInfo';
-import Footer from '../Layout/Footer';
+import Header from '../Layout/components/Header';
+import LandingPage from '../Layout/components/LandingPage';
+import RestaurantInfo from '../Layout/components/RestaurantInfo';
+import Footer from '../Layout/components/Footer';
 
 function Home() {
   return (

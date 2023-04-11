@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
-import classes from "./css/ContactsInfo.module.css";
-import ContactsForm from '../Layout/ContactsForm';
-import "./css/ContactsInfo.module.css";
+import classes from "../css/ContactsInfo.module.css";
+import ContactsForm from '../components/ContactsForm';
+import "../css/ContactsInfo.module.css";
 
 export default function ContactsInfo() {
     return (

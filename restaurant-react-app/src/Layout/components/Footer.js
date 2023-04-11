@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/all.css';
+import '../css/all.css';
 import {
   MDBFooter,
   MDBContainer,
