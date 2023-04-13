@@ -1,22 +1,15 @@
-import MenuItems from "./MenuItems";
-export default function Menu(){
-    const name = "Test";
-    const supi = [
-        {
-            name: "Shkembe"
-        },
-        {
-            name: "Topcheta"
-        },
-        {
-            name: "Bob"
-        }
-    ]
+import Header from '../Layout/components/Header';
+import Footer from '../Layout/components/Footer';
+import MenuImage from '../Layout/components/MenuImage';
+
+function Menu() {
     return (
         <div>
-            <ul>
-                <MenuItems order = {supi}></MenuItems>
-            </ul>
+            <Header/>
+            <MenuImage/>
+            <Footer/>
         </div>
     );
 }
+
+export default Menu;

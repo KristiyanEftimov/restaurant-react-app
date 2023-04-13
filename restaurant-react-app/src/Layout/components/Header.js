@@ -1,4 +1,4 @@
-import { Navbar, Nav, NavDropdown, Container, NavbarBrand } from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from "../css/Header.module.css";
 import logo from '../media/RestaurantLogo.png';
@@ -22,6 +22,10 @@ export default function Header() {
   const navigateToReservation = () => {
     navigate('/reservation');
   };
+
+  const navigateToMenu = () => {
+    navigate('/menu');
+  };
   
   return (
     <Navbar className={classes.navbar}  expand="lg">
@@ -34,10 +38,7 @@ export default function Header() {
           <Nav className="me-auto" bg="light">
             <Nav.Link className={classes.link} onClick={navigateToHome}>Начало</Nav.Link>
             <Nav.Link className={classes.link} onClick={navigateToAbout}>За нас</Nav.Link>
-            <NavDropdown style={{color: "white"}} href="#menu" title="Меню" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#menu-lunch">Обедно меню</NavDropdown.Item>
-              <NavDropdown.Item href="#menu-dinner">Основно меню</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link className={classes.link} onClick={navigateToMenu}>Меню</Nav.Link>
             <Nav.Link className={classes.link} onClick={navigateToContacts}>Контакти</Nav.Link>
             <Nav.Link className={classes.link} onClick={navigateToReservation}>Резервация</Nav.Link>
           </Nav>
