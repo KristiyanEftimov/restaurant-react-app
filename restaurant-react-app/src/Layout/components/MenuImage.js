@@ -7,7 +7,7 @@ import background from '../media/food.jpg';
 
 
 export default function MenuImage() {
-    return(
+    return (
         <Container className={classes.contactsImage}>
             <div className={classes.overlay}></div>
             <img className ={classes.background} src = {background} />
