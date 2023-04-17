@@ -158,7 +158,7 @@
   }
   @media screen and (min-width: 1200px) {
     .section-center {
-      width: 95vw;
+      /* width: 95vw; */
       grid-template-columns: 1fr 1fr;
     }
     .photo {
@@ -187,14 +187,18 @@
     }
   }
 
-  @media screen and (min-width: 992px) {
-    .section {
-      width: 95vw;
-    }
-  }
-
   @media screen and (max-width: 768px) {
     .btn-container {
       display: grid;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .section-center {
+      display: block;
+    }
+
+    .menu-item {
+      margin-bottom: 2rem;
     }
   }
