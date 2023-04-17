@@ -4,6 +4,7 @@ import Categories from './Categories';
 import { Container} from "react-bootstrap";
 import items from './MenuItems';
 import '../css/MenuInfo.css';
+import ScrollToTop from "react-scroll-to-top";
 
 const allCategories = ['всички', ...new Set(items.map(item => item.category))];
 
@@ -24,6 +25,7 @@ export default function MenuInfo() {
   return (
     <Container className='menu-container'>
       <section className="menu section">
+      <ScrollToTop smooth color="white" style={{backgroundColor: "#C39D63"}}/>
         <div className="title">
           <h2 className='menu-main-title'>Нашето Меню</h2>
           <div className="underline" />

@@ -46,7 +46,6 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     line-height: 1.5;
-    font-size: 0.875rem;
   }
 
   .menu-main-title,
@@ -194,7 +193,7 @@
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 768px) {
     .btn-container {
       display: grid;
     }
