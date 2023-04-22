@@ -1,0 +1,78 @@
+/* .form {
+    background-color: white;
+} */
+
+.form h1 {
+    margin-bottom: 2rem;
+}
+
+.steptitle {
+    font-size: 30px;
+}
+
+.progressbar,
+.progressValues {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+.progresselement {
+    /* margin-right: 10px; */
+    padding: 0.5rem 1.7rem;
+}
+
+.progresselement i {
+    font-size: 20px;
+    
+}
+  /* .progressbar div {
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(98, 0, 255);
+  }
+  
+  .other-info-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .other-info-container input {
+    margin: 5px;
+    width: 200px;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+  
+  input {
+    border: 2px solid rgb(98, 0, 255);
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    border: 3px solid rgb(98, 0, 255);
+  } */
+
+.formfooter button {
+    margin: 20px 0;
+    background-color: #C39D63;
+    padding: 0.55rem 1.55rem;
+    font-size: large;
+    margin-right: 20px;
+    border: none;
+    color: white;
+}
+
+.formfooter button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+select {
+    padding: 10px 20px;
+}

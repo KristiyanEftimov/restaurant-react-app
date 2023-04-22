@@ -1,0 +1,29 @@
+/* .selectedButton {
+    margin-right: 10px;
+    background-color: #C39D63;
+    padding: 0.55rem 1.55rem;
+} */
+
+.selected {
+  background-color: #C39D63 !important;
+  color: white;
+}
+
+.guestNumberContainer button:hover {
+  background-color: #C39D63;
+  color: white;
+}
+
+.guestNumberContainer button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.guestNumberContainer button:last-child {
+  margin-right: 0;
+}

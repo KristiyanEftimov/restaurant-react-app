@@ -1,0 +1,24 @@
+.personalInfoContainer {
+    width: 30%;
+}
+
+.personalInfoRow {
+    margin-bottom: 1rem;
+}
+
+.personalInfoRow input {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .personalInfoContainer {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 991.5px) {
+    .personalInfoContainer {
+        width: 50%;
+    }
+}

@@ -1,0 +1,23 @@
+/* .row .col p {
+    margin: 0;
+} */
+
+.reservationTime {
+    width: 50%
+}
+
+.reservationTimeRow {
+    margin-bottom: 10px;
+}
+
+.reservationTimeCol {
+    /* line-height: 0.5; */
+    border: 1px solid black;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.reservationTimeCol:hover {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
