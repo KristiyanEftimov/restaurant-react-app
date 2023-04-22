@@ -57,6 +57,7 @@
   }
   .menu-item-title,
     .price {
+    text-align: left;
     font-size: 0.875rem;
   }
   .item-text {
