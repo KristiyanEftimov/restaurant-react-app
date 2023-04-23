@@ -9,10 +9,10 @@ import { Container } from "react-bootstrap";
 
 export default function ReservationForm() {
     const [page, setPage] = useState(0);
-
     const [selectedDate, setSelectedDate] = useState(null);
     const [selectedArea, setSelectedArea] = useState("");
-    const [selectedButton, setSelectedButton] = useState(null);
+    const [selectedGuestNumber, setSelectedGuestNumber] = useState(null);
+    const [selectedTime, setSelectedTime] = useState(null);
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
@@ -22,8 +22,12 @@ export default function ReservationForm() {
         setSelectedArea(event.target.value);
     };
 
-    const handleButtonClick = (buttonValue) => {
-        setSelectedButton(buttonValue);
+    const handleGuestNumberButtonClick = (buttonValue) => {
+        setSelectedGuestNumber(buttonValue);
+    };
+
+    const handleTimeButtonClick = (buttonValue) => {
+        setSelectedTime(buttonValue);
     };
 
     const [personalInfoData, setPersonalInfoData] = useState({
@@ -37,14 +41,12 @@ export default function ReservationForm() {
 
     const PageDisplay = () => {
         if (page === 0) {
-            // return <ReservationCalendar formData={formData} setFormData={setFormData} />;
             return <ReservationCalendar onChange={ handleDateChange } />;
         } else if (page === 1) {
-            return <ReservationGuestNumber onClick={ handleButtonClick } />;
+            return <ReservationGuestNumber onClick={ handleGuestNumberButtonClick } />;
         } else if (page === 2) {
-            return <ReservationTime/>;
+            return <ReservationTime  onClick={ handleTimeButtonClick }/>;
         } else if (page === 3) {
-            // return <ReservationArea formData={formData} setFormData={setFormData} />;
             return <ReservationArea onChange={ handleAreaChange } />;
         } else {
             return <ReservationPersonalInfo personalInfoData={personalInfoData} setPersonalInfoData={setPersonalInfoData} />;
@@ -68,7 +70,7 @@ export default function ReservationForm() {
                         <i class="fa-solid fa-person"></i>
                     </div>
                     <div>
-                        <p>{selectedButton}</p>
+                        <p>{selectedGuestNumber}</p>
                     </div>
                 </div>
                 <div>
@@ -76,7 +78,7 @@ export default function ReservationForm() {
                         <i class="fa-solid fa-clock"></i>
                     </div>
                     <div>
-                        {/* <p>{selectedDate ? selectedDate.toLocaleDateString() : ''}</p> */}
+                    <p>{selectedTime}</p>
                     </div>
                 </div>
                 <div>
@@ -84,15 +86,12 @@ export default function ReservationForm() {
                         <i class="fa-solid fa-utensils"></i>
                     </div>
                     <div>
-                        <p>{selectedArea ? selectedArea.toString() : ''}</p>
+                        <p>{selectedArea}</p>
                     </div>
                 </div>
                 <div>
                     <div style={{backgroundColor: page === 4 ? "#C39D63" : ""}} className={classes.progresselement}>
                         <i class="fa-solid fa-check"></i>
-                    </div>
-                    <div>
-                        {/* <p>{selectedDate ? selectedDate.toLocaleDateString() : ''}</p> */}
                     </div>
                 </div>
             </div>

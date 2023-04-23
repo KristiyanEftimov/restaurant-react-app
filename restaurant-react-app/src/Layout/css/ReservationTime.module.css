@@ -11,13 +11,17 @@
 }
 
 .reservationTimeCol {
-    /* line-height: 0.5; */
+    background-color: white;
+    color: black;
     border: 1px solid black;
-    padding-top: 10px;
-    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 8px;
+    height: 5.5rem;
+    width: 6.5rem;
 }
 
 .reservationTimeCol:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    background-color: #C39D63;
+    color: white;
 }
