@@ -43,9 +43,9 @@ export default function ReservationForm() {
         if (page === 0) {
             return <ReservationCalendar onChange={ handleDateChange } />;
         } else if (page === 1) {
-            return <ReservationGuestNumber onClick={ handleGuestNumberButtonClick } />;
+            return <ReservationGuestNumber onClick={ handleGuestNumberButtonClick } selectedGuestNumber={selectedGuestNumber}/>;
         } else if (page === 2) {
-            return <ReservationTime  onClick={ handleTimeButtonClick }/>;
+            return <ReservationTime onClick={ handleTimeButtonClick } selectedTime={selectedTime}/>;
         } else if (page === 3) {
             return <ReservationArea onChange={ handleAreaChange } />;
         } else {
@@ -108,7 +108,7 @@ export default function ReservationForm() {
                         setPage((currPage) => currPage - 1);
                     }}
                 >
-                    Prev
+                    Назад
                 </button>
                 <button style={{marginRight: "0"}}
                     onClick={() => {
@@ -120,7 +120,7 @@ export default function ReservationForm() {
                         }
                     }}
                 >
-                    {page === FormTitles.length - 1 ? "Submit" : "Next"}
+                    {page === FormTitles.length - 1 ? "Резервирай" : "Напред"}
                 </button>
             </div>
         </Container>

@@ -10,7 +10,7 @@
     margin-bottom: 10px;
 }
 
-.reservationTimeCol {
+.reservationTime button {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -21,7 +21,12 @@
     width: 6.5rem;
 }
 
-.reservationTimeCol:hover {
+.reservationTime button:hover {
     background-color: #C39D63;
     color: white;
 }
+
+.reservationTime .selected {
+    background-color: #C39D63;
+    color: white;
+  }
