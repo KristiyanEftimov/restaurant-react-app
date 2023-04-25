@@ -18,8 +18,8 @@ export default function ReservationForm() {
         setSelectedDate(date);
     };
 
-    const handleAreaChange = (value) => {
-        setSelectedArea(value);
+    const handleAreaChange = (event) => {
+        setSelectedArea(event.target.value);
     };
 
     const handleGuestNumberButtonClick = (buttonValue) => {

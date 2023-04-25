@@ -3,16 +3,10 @@ import "../css/ReservationForm.module.css";
 import { Container } from "react-bootstrap";
 
 export default function ReservationArea({ onChange, selectedArea }) {
-
-  const handleChange = (event) => {
-    const value = event.target.value;
-    onChange(value);
-  }
-
   return (
     <Container>
-      <select name='areas' onChange={handleChange} value={selectedArea}>
-        <option value="">Изберете зала</option>
+      <select name='areas' onChange={onChange} value={selectedArea}>
+        <option value="" selected disabled hidden>Изберете зала</option>
         <option value="градина">Градина</option>
         <option value="непушачи">Зала за непушачи</option>
         <option value="пушачи">Зала за пушачи</option>
