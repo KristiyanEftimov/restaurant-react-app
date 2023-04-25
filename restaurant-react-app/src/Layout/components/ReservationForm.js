@@ -18,8 +18,8 @@ export default function ReservationForm() {
         setSelectedDate(date);
     };
 
-    const handleAreaChange = (event) => {
-        setSelectedArea(event.target.value);
+    const handleAreaChange = (value) => {
+        setSelectedArea(value);
     };
 
     const handleGuestNumberButtonClick = (buttonValue) => {
@@ -41,19 +41,19 @@ export default function ReservationForm() {
 
     const PageDisplay = () => {
         if (page === 0) {
-            return <ReservationCalendar onChange={ handleDateChange } />;
+            return <ReservationCalendar onChange={ handleDateChange }  selectedDate={selectedDate}/>;
         } else if (page === 1) {
             return <ReservationGuestNumber onClick={ handleGuestNumberButtonClick } selectedGuestNumber={selectedGuestNumber}/>;
         } else if (page === 2) {
             return <ReservationTime onClick={ handleTimeButtonClick } selectedTime={selectedTime}/>;
         } else if (page === 3) {
-            return <ReservationArea onChange={ handleAreaChange } />;
+            return <ReservationArea onChange={ handleAreaChange } selectedArea={selectedArea} />;
         } else {
             return <ReservationPersonalInfo personalInfoData={personalInfoData} setPersonalInfoData={setPersonalInfoData} />;
         }
     };
 
-    return(
+    return (
         <Container className={classes.form}>
             <h1>Резервация</h1>
             <div className={classes.progressbar}>

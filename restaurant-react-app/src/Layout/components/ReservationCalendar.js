@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap";
 export default function ReservationCalendar({ onChange, selectedDate }) {
     return(
         <Container className={classes.calendar}>
-            <Calendar minDate={new Date()} onChange={ onChange }/>
+            <Calendar minDate={new Date()} defaultValue={selectedDate} onChange={ onChange }/>
         </Container>
     );
 }

@@ -11,7 +11,7 @@ export default function LandingPage() {
                 <source src={RestaurantVideo} type="video/mp4" />
             </video>
             <h2>
-                Добре дошли в ресторант <br/> "The Hungry Bear" <br/>
+                Вкусна храна и уютна атмосфера, <br/> където гостоприемството е на първо място <br/>
                 <a className={classes.reservation} href='/reservation'>Резервация</a>
             </h2>
         </Container>
