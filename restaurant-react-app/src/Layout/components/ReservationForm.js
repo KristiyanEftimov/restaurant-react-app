@@ -113,10 +113,9 @@ export default function ReservationForm() {
                 <button style={{marginRight: "0"}}
                     onClick={() => {
                         if (page === FormTitles.length - 1) {
-                            alert("FORM SUBMITTED");
-                            // console.log(formData);
+                            alert("Резервацията е успешна!");
                         } else {
-                        setPage((currPage) => currPage + 1);
+                            setPage((currPage) => currPage + 1);
                         }
                     }}
                 >
