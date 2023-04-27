@@ -52,6 +52,7 @@ hr {
     width: 50%;
     margin: 10px auto;
     color: #C39D63;
+    border-top: 4px solid;
 }
 
 .reviews {
