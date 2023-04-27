@@ -6,6 +6,10 @@
     margin-bottom: 1rem;
 }
 
+.col {
+    text-align: right !important;
+}
+
 .personalInfoRow input {
     padding: 5px;
 }

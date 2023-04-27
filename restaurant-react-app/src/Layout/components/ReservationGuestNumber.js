@@ -11,7 +11,7 @@ export default function ReservationGuestNumber( {onClick, selectedGuestNumber} )
   return (
     <Container className={classes.guestNumberContainer}>
       {buttonRows.map((row, rowIndex) => (
-        <div key={rowIndex}> <br/>
+        <div key={rowIndex}>
           {row.map((number) => (
             <button
               key={number}

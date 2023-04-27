@@ -12,8 +12,8 @@ export default function Footer() {
     <MDBFooter>
       <MDBContainer className='pt-4'>
         <section className='mb-4'>
-        <a href='https://github.com/KristiyanEftimov/restaurant-react-app' target="_blank" className='me-4 text-reset'>
-            <MDBIcon fab icon="github" size="lg" />
+        <a href='https://github.com/KristiyanEftimov/restaurant-react-app' target="blank" className='me-4 text-reset'>
+            <MDBIcon fab icon="github" size="2x" />
         </a>
         </section>
       </MDBContainer>

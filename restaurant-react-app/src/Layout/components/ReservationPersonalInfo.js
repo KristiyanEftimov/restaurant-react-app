@@ -6,7 +6,7 @@ export default function ReservationPersonalInfo({ personalInfoData, setPersonalI
     return(
         <Container className={classes.personalInfoContainer}>
             <Row className={classes.personalInfoRow}>
-                <Col>
+                <Col className={classes.col}>
                     <label>Име</label>
                 </Col>
                 <Col>
@@ -21,7 +21,7 @@ export default function ReservationPersonalInfo({ personalInfoData, setPersonalI
                 </Col>
             </Row>
             <Row className={classes.personalInfoRow}>
-                <Col>
+                <Col className={classes.col}>
                     <label>Фамилия</label>
                 </Col>
                 <Col>
@@ -36,7 +36,7 @@ export default function ReservationPersonalInfo({ personalInfoData, setPersonalI
                 </Col>
             </Row>
             <Row className={classes.personalInfoRow}>
-                <Col>
+                <Col className={classes.col}>
                     <label>E-mail</label>
                 </Col>
                 <Col>
@@ -51,7 +51,7 @@ export default function ReservationPersonalInfo({ personalInfoData, setPersonalI
                 </Col>
             </Row>
             <Row className={classes.personalInfoRow}>
-                <Col>
+                <Col className={classes.col}>
                     <label>Телефон</label>
                 </Col>
                 <Col>

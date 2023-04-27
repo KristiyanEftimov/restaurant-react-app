@@ -23,6 +23,43 @@
     text-align: justify;
 }
 
+.persona {
+    width: 100px;
+    height: 90px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.stars {
+    color: #D4AF37;
+}
+
+.emptystar {
+    color: #E6C9A6;
+}
+
+.opinions p {
+    text-align: left;
+}
+
+.personaName {
+    text-align: center !important;
+    font-weight: 500;
+}
+
+hr {
+    width: 50%;
+    margin: 10px auto;
+    color: #C39D63;
+}
+
+.reviews {
+    font-size: 23px;
+    color:#C39D63;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 991.5px) {
     .opinions,
     .row {

@@ -19,6 +19,9 @@
   margin-left: auto;
 }
 
+.restaurantName {
+  color: white;
+}
 .brand{
   text-align: left;
 }

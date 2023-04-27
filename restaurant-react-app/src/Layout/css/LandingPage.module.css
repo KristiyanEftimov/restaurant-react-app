@@ -54,3 +54,20 @@ h2 {
     color: white;
     transition: 0.3s;
 }
+
+@media only screen and (max-width: 768px) { 
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) { 
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .reservation {
+        /* font-size: 18px; */
+    }
+}
+

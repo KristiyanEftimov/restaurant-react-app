@@ -1,52 +1,54 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import classes from "../css/ReservationTime.module.css";
 
+const timeSlots = [
+    { time: '08:00', discount: 0 },
+    { time: '08:30', discount: 0 },
+    { time: '09:00', discount: 0 },
+    { time: '09:30', discount: 0 },
+    { time: '10:00', discount: 15 },
+    { time: '10:30', discount: 15 },
+    { time: '11:00', discount: 15 },
+    { time: '11:30', discount: 15 },
+    { time: '12:00', discount: 10 },
+    { time: '12:30', discount: 10 },
+    { time: '13:00', discount: 10 },
+    { time: '13:30', discount: 10 },
+    { time: '14:00', discount: 15 },
+    { time: '14:30', discount: 15 },
+    { time: '15:00', discount: 15 },
+    { time: '15:30', discount: 15 },
+    { time: '16:00', discount: 10 },
+    { time: '16:30', discount: 10 },
+    { time: '17:00', discount: 10 },
+    { time: '17:30', discount: 10 },
+    { time: '18:00', discount: 0 },
+    { time: '18:30', discount: 0 },
+    { time: '19:00', discount: 0 },
+    { time: '20:00', discount: 0 },
+    { time: '20:30', discount: 0 },
+    { time: '21:00', discount: 0 },
+    { time: '21:30', discount: 0 },
+];
+
 export default function ReservationTime( { onClick, selectedTime } ) {
-    return(
-        <Container className={classes.reservationTime}>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('08:00')} className={selectedTime === '08:00' ? classes.selected : ''}>08:00</button></Col>
-                <Col><button onClick={() => onClick('08:30')} className={selectedTime === '08:30' ? classes.selected : ''}>08:30</button></Col>
-                <Col><button onClick={() => onClick('09:00')} className={selectedTime === '09:00' ? classes.selected : ''}>09:00</button></Col>
-                <Col><button onClick={() => onClick('09:30')} className={selectedTime === '09:30' ? classes.selected : ''}>09:30</button></Col>
-            </Row>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('10:00')} className={selectedTime === '10:00' ? classes.selected : ''}>10:00<br/>15% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('10:30')} className={selectedTime === '10:30' ? classes.selected : ''}>10:30<br/>15% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('11:00')} className={selectedTime === '11:00' ? classes.selected : ''}>11:00<br/>15% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('11:30')} className={selectedTime === '11:30' ? classes.selected : ''}>11:30<br/>15% отстъпка</button></Col>
-            </Row>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('12:00')} className={selectedTime === '12:00' ? classes.selected : ''}>12:00<br/>10% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('12:30')} className={selectedTime === '12:30' ? classes.selected : ''}>12:30<br/>10% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('13:00')} className={selectedTime === '13:00' ? classes.selected : ''}>13:00<br/>10% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('13:30')} className={selectedTime === '13:30' ? classes.selected : ''}>13:30<br/>10% отстъпка</button></Col>
-            </Row>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('14:00')} className={selectedTime === '14:00' ? classes.selected : ''}>14:00<br/>15% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('14:30')} className={selectedTime === '14:30' ? classes.selected : ''}>14:30<br/>15% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('15:00')} className={selectedTime === '15:00' ? classes.selected : ''}>15:00<br/>15% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('15:30')} className={selectedTime === '15:30' ? classes.selected : ''}>15:30<br/>15% отстъпка</button></Col>
-            </Row>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('16:00')} className={selectedTime === '16:00' ? classes.selected : ''}>16:00<br/>10% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('16:30')} className={selectedTime === '16:30' ? classes.selected : ''}>16:30<br/>10% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('17:00')} className={selectedTime === '17:00' ? classes.selected : ''}>17:00<br/>10% отстъпка</button></Col>
-                <Col><button onClick={() => onClick('17:30')} className={selectedTime === '17:30' ? classes.selected : ''}>17:30<br/>10% отстъпка</button></Col>
-            </Row>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('18:00')} className={selectedTime === '18:00' ? classes.selected : ''}>18:00</button></Col>
-                <Col><button onClick={() => onClick('18:30')} className={selectedTime === '18:30' ? classes.selected : ''}>18:30</button></Col>
-                <Col><button onClick={() => onClick('19:00')} className={selectedTime === '19:00' ? classes.selected : ''}>19:00</button></Col>
-                <Col><button onClick={() => onClick('19:30')} className={selectedTime === '19:30' ? classes.selected : ''}>19:30</button></Col>
-            </Row>
-            <Row className={classes.reservationTimeRow}>
-                <Col><button onClick={() => onClick('20:00')} className={selectedTime === '20:00' ? classes.selected : ''}>20:00</button></Col>
-                <Col><button onClick={() => onClick('20:30')} className={selectedTime === '20:30' ? classes.selected : ''}>20:30</button></Col>
-                <Col><button onClick={() => onClick('21:00')} className={selectedTime === '21:00' ? classes.selected : ''}>21:00</button></Col>
-                <Col><button onClick={() => onClick('21:30')} className={selectedTime === '21:30' ? classes.selected : ''}>21:30</button></Col>
-            </Row>
-        </Container>
-    );
-}
+    return (
+        <div className={classes.reservationTime}>
+          <div className={classes.block}>
+            {timeSlots.map((slot) => (
+              <button
+                key={slot.time}
+                onClick={() => onClick(slot.time)}
+                className={`${classes.slot} ${
+                  selectedTime === slot.time ? classes.selected : ""
+                }`}
+              >
+                {slot.time}
+                {slot.discount ? <br /> : null}
+                {slot.discount ? `${slot.discount}% отстъпка` : null}
+              </button>
+            ))}
+          </div>
+        </div>
+      );
+    }

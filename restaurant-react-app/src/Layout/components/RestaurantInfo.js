@@ -4,6 +4,9 @@ import classes from "../css/RestaurantInfo.module.css";
 import RestaurantFood from '../media/RestaurantFood.jpg';
 import RestaurantView from '../media/RestaurantView.jpg';
 import ScrollToTop from "react-scroll-to-top";
+import Persona1 from "../media/persona1.png";
+import Persona2 from "../media/persona2.png";
+import Persona3 from "../media/persona3.png";
 
 export default function RestaurantInfo() {
     return (
@@ -39,27 +42,53 @@ export default function RestaurantInfo() {
                 </Col>
                 <Col>
                     <br/>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.8974655930524!2d27.93605231475953!3d43.211639888890126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEyJzQxLjkiTiAyN8KwNTYnMTcuNyJF!5e0!3m2!1sbg!2sbg!4v1680806841288!5m2!1sbg!2sbg" width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.8974655930524!2d27.93605231475953!3d43.211639888890126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEyJzQxLjkiTiAyN8KwNTYnMTcuNyJF!5e0!3m2!1sbg!2sbg!4v1680806841288!5m2!1sbg!2sbg" title='location' width="500" height="350" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </Col>
             </Row>
             <Row className={classes.row}>
-                <Col><p className={classes.reviews}>ОТЗИВИ</p></Col>
+                <Col><p className={classes.reviews}>ОТЗИВИ</p> <hr/></Col>
             </Row>
             <Row className={classes.opinions}>
                 <Col>
-                    <h4>“Вкусна храна и прекрасни хора.”</h4>
+                    <img className={classes.persona} src={Persona1} alt="Persona1"/><br/>
+                    <h4>“Вкусна храна и прекрасни хора”</h4>
                     <p>Имах невероятно преживяване в този ресторант. Храната беше изключително вкусна, обстановката беше приятна и обслужването беше на ниво. Препоръчвам горещо на всеки да посети това място.</p>
-                    <p>Антоанета Димитрова</p>
+                    <p className={classes.personaName}>Антоанета Димитрова</p>
+                    <span className={classes.stars}>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                    </span>
                 </Col>
                 <Col>
-                    <h4>“Вкусна храна и прекрасни хора.”</h4>
+                <img className={classes.persona} src={Persona2} alt="Persona2"/><br/>
+                    <h4>“Качество на храна и обслужване”</h4>
                     <p>Ресторантът предлага богато разнообразие от ястия и напитки, които са приготвени внимателно и вкусно. Обслужването е превъзходно и персоналът е много гостоприемен и услужлив.</p>
-                    <p>Любомир Георгиев</p>
+                    <p className={classes.personaName}>Любомир Георгиев</p>
+                    <span className={classes.stars}>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                    </span>
+                    <span className={classes.emptystar}>
+                        <i class="fa-solid fa-star" ></i>
+                    </span>
                 </Col>
-                <Col>   
-                    <h4>“Вкусна храна и прекрасни хора.”</h4>
+                <Col>
+                <img className={classes.persona} src={Persona3} alt="Persona3"/><br/>
+                    <h4>“Идеално място за посещение”</h4>
                     <p>Това е мястото, където бих се върнал отново и отново! Храната е невероятно вкусна, обслужването е на ниво, а атмосферата е уютна и приятна. Нямам никакви забележки и го препоръчвам на всички.</p>
-                    <p>Стоян Колев</p>
+                    <p className={classes.personaName}>Стоян Колев</p>
+                    <span className={classes.stars}>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                        <i class="fa-solid fa-star" ></i>
+                    </span>
                 </Col>
             </Row>
         </Container>

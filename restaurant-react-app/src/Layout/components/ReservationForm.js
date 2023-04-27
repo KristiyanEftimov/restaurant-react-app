@@ -17,7 +17,7 @@ export default function ReservationForm() {
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
-
+    
     const handleAreaChange = (event) => {
         setSelectedArea(event.target.value);
     };
@@ -103,7 +103,7 @@ export default function ReservationForm() {
             </div>
             <div className={classes.formfooter}>
                 <button className={classes.button}
-                    disabled={page == 0}
+                    disabled={page === 0}
                     onClick={() => {
                         setPage((currPage) => currPage - 1);
                     }}
@@ -115,7 +115,15 @@ export default function ReservationForm() {
                         if (page === FormTitles.length - 1) {
                             alert("Резервацията е успешна!");
                         } else {
-                            setPage((currPage) => currPage + 1);
+                            if((page === 0 && selectedDate != null) ||
+                              (page === 1 && selectedGuestNumber != null) || 
+                              (page === 2 && selectedTime != null) ||
+                              (page === 3 && selectedArea !== "")) {
+                                setPage((currPage) => currPage + 1);
+                            } else  {
+                                alert("Попълнете полето")
+                            }
+                            
                         }
                     }}
                 >

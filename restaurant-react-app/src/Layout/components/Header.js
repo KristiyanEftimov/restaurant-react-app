@@ -32,6 +32,7 @@ export default function Header() {
       <Container>
         <Navbar.Brand className={classes.brand}>
             <a href="/"><img src={logo} className={classes.logo} alt="restaurant logo" /></a>
+            <span className={classes.restaurantName}>The Hungry Bear</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className={classes.right} id="basic-navbar-nav">
