@@ -65,6 +65,20 @@ export default function ReservationPersonalInfo({ personalInfoData, setPersonalI
                     />
                 </Col>
             </Row>
+            <Row className={classes.personalInfoRow}>
+                <Col className={classes.col}>
+                    <label>Коментар</label>
+                </Col>
+                <Col>
+                    <textarea
+                        name="comment" 
+                        rows="4" cols="23.80"
+                        placeholder="Въведете допълнителна информания, ако имате нужда" 
+                        value={ personalInfoData.comment } 
+                        onChange={ (event) => setPersonalInfoData( {...personalInfoData, comment: event.target.value} ) }
+                    />
+                </Col>
+            </Row>
         </Container>
     );
 }

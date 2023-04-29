@@ -34,7 +34,8 @@ export default function ReservationForm() {
         firstName: "",
         lastName: "",
         email: "",
-        phoneNumber: ""
+        phoneNumber: "",
+        comment: ""
       });
 
     const FormTitles = ["Дата", "Брой хора", "Час", "Зала", "Лична информация"];
@@ -45,7 +46,7 @@ export default function ReservationForm() {
         } else if (page === 1) {
             return <ReservationGuestNumber onClick={ handleGuestNumberButtonClick } selectedGuestNumber={selectedGuestNumber}/>;
         } else if (page === 2) {
-            return <ReservationTime onClick={ handleTimeButtonClick } selectedTime={selectedTime}/>;
+            return <ReservationTime onClick={ handleTimeButtonClick } selectedTime={selectedTime} selectedDate={selectedDate}/>;
         } else if (page === 3) {
             return <ReservationArea onChange={ handleAreaChange } selectedArea={selectedArea} />;
         } else {

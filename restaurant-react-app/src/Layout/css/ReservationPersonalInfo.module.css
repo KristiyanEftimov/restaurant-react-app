@@ -25,4 +25,10 @@
     .personalInfoContainer {
         width: 50%;
     }
+    .col {
+        text-align: center !important;
+    }
+    textarea {
+        padding-right: 17px;
+    }
 }
