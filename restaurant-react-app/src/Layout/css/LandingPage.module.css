@@ -42,10 +42,12 @@ h2 {
 .reservation {
     font-size: 30px;
     text-decoration: none;
+    font-weight: bold;
     color: #C39D63;
-    border: 1px solid #C39D63;
+    border: 3px solid #C39D63;
     padding: 1.75rem 3.55rem;
     border-radius: 0.375rem;
+    background-color: rgb(0, 0, 0, 0.6);
     letter-spacing: 0;
 }
 
