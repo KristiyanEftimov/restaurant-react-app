@@ -11,7 +11,7 @@ export default function LandingPage() {
             <video className={classes.video} playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop" loading="lazy">
                 <source src={RestaurantVideo} type="video/mp4" />
             </video>
-            <Zoom className={classes.reactreveal}>
+            <Zoom className={classes.reactreveal} triggerOnce>
             <h2>
                 Вкусна храна и уютна атмосфера <br/> <br/>
                 <a className={classes.reservation} href='/reservation'>Резервация</a>
