@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import classes from "../css/RestaurantInfo.module.css";
 import RestaurantFood from '../media/RestaurantFood.jpg';
 import RestaurantView from '../media/RestaurantView.jpg';
+import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
+import { Reveal } from 'react-awesome-reveal';
 import ScrollToTop from "react-scroll-to-top";
 import Persona1 from "../media/persona1.png";
 import Persona2 from "../media/persona2.png";
@@ -12,6 +15,7 @@ export default function RestaurantInfo() {
     return (
         <Container>
             <ScrollToTop smooth color="white" style={{backgroundColor: "#C39D63"}}/>
+            <Reveal triggerOnce>
             <Row className={classes.row}>
                 <Col>
                     <h3>Нашата мисия</h3>
@@ -23,6 +27,8 @@ export default function RestaurantInfo() {
                 </Col>
                 <Col><img className={classes.restaurantImage} src={RestaurantView} alt="Food"/></Col>
             </Row>
+            </Reveal>
+            <Fade direction="right" triggerOnce>
             <Row className={classes.row}>
                 <Col><img className={classes.restaurantImage} src={RestaurantFood} alt="Food"/></Col>
                 <Col>
@@ -32,6 +38,8 @@ export default function RestaurantInfo() {
                     <a className={classes.button} href="/menu">Меню</a>
                 </Col>
             </Row>
+            </Fade>
+            <Fade direction="down" triggerOnce>
             <Row className={classes.row}>
                 <Col>
                     <br/> <br/>
@@ -45,6 +53,8 @@ export default function RestaurantInfo() {
                     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.8974655930524!2d27.93605231475953!3d43.211639888890126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEyJzQxLjkiTiAyN8KwNTYnMTcuNyJF!5e0!3m2!1sbg!2sbg!4v1680806841288!5m2!1sbg!2sbg" title='location' width="500" height="350" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </Col>
             </Row>
+            </Fade>
+            <Zoom triggerOnce>
             <Row className={classes.row}>
                 <Col><p className={classes.reviews}>ОТЗИВИ</p> <hr/></Col>
             </Row>
@@ -91,6 +101,8 @@ export default function RestaurantInfo() {
                     </span>
                 </Col>
             </Row>
+            
+            </Zoom>
         </Container>
     );
 }
