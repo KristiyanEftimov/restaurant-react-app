@@ -27,6 +27,15 @@
     color: white;
 }
 
+.reservationTime button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.reservationTime button:disabled:hover {
+    color: black
+}
+
 .reservationTime .selected {
     background-color: #C39D63;
     color: white;

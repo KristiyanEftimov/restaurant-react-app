@@ -5,7 +5,7 @@ import classes from "../css/ReservationGuestNumber.module.css";
 export default function ReservationGuestNumber( {onClick, selectedGuestNumber} ) {
   const buttonRows = [
     ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-    ['13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '+'],
+    ['13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23+'],
   ];
 
   return (
@@ -23,6 +23,7 @@ export default function ReservationGuestNumber( {onClick, selectedGuestNumber} )
           ))}
         </div>
       ))}
+      <p><br/>* При избор на 23+ гости уточнете точната бройка в полето за коментар в последната стъпка на формата!</p>
     </Container>
   );
 }

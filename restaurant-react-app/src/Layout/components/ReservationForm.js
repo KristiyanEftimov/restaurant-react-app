@@ -16,6 +16,7 @@ export default function ReservationForm() {
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
+        setSelectedTime(null);
     };
     
     const handleAreaChange = (event) => {
