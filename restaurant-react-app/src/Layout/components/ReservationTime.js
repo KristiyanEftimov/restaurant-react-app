@@ -25,6 +25,7 @@ const timeSlots = [
     { time: '18:00', discount: 0 },
     { time: '18:30', discount: 0 },
     { time: '19:00', discount: 0 },
+    { time: '19:30', discount: 0 },
     { time: '20:00', discount: 0 },
     { time: '20:30', discount: 0 },
     { time: '21:00', discount: 0 },
