@@ -115,7 +115,17 @@ export default function ReservationForm() {
                 <button style={{marginRight: "0"}}
                     onClick={() => {
                         if (page === FormTitles.length - 1) {
-                            alert("Резервацията е успешна!");
+                            if( personalInfoData.firstName !== "" && 
+                                personalInfoData.lastName !== "" && 
+                                personalInfoData.email !== "" && 
+                                personalInfoData.phoneNumber !== "") {
+                                    
+                                window.location.reload(true);
+                                alert("Резервацията е успешна!");
+                            } else {
+                                alert("Попълнете всички полета!");
+                            }
+                            
                         } else {
                             if((page === 0 && selectedDate != null) ||
                               (page === 1 && selectedGuestNumber != null) || 
